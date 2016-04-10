@@ -1,20 +1,27 @@
 {
   "name": "gomail",
   "version": "0.0.1",
-  "description": "",
+  "description": "Web mail client",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server --progress --colors --host=\"0.0.0.0\""
+    "dev": "./node_modules/.bin/webpack-dev-server --progress --colors --host=\"0.0.0.0\"",
+    "production": "PRODUCTION=true ./node_modules/.bin/webpack"
   },
   "author": "Gregory Khromov",
   "license": "GPL-3.0",
   "dependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "less": "^2.6.1",
+    "less-loader": "^2.2.3",
     "react": "0.14.x",
     "react-dom": "0.14.x",
+    "style-loader": "^0.13.1",
     "ts-loader": "^0.8.1",
     "typescript": "^1.8.9",
     "typings": "^0.7.12",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
-  }
+  },
+  "devDependencies": {}
 }
