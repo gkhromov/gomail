@@ -1,5 +1,5 @@
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: './index.ts',
@@ -24,7 +24,5 @@ module.exports = {
 }
 
 if (typeof(process.env.PRODUCTION) != undefined && process.env.PRODUCTION) {
-  module.exports.plugins = [
-    new webpack.optimize.UglifyJsPlugin()
-  ]
+  module.exports.plugins.push(new webpack.optimize.UglifyJsPlugin());
 }
